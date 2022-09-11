@@ -28,4 +28,4 @@
     state: present
     reload: yes
   when: >
-    kubernetes_pod_network.cni = 'calico'
+    kubernetes_pod_network.cni == 'calico'
