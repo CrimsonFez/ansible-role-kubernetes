@@ -1,0 +1,5 @@
+---
+- name: Ensure br_netfilter module is loaded
+  community.general.modprobe:
+    name: br_netfilter
+    state: present

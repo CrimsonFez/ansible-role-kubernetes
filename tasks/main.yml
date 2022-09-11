@@ -19,6 +19,7 @@
   with_items: "{{ kubernetes_packages }}"
 
 - include_tasks: sysctl-setup.yml
+- include_tasks: modprobe.yml
 
 - include_tasks: kubelet-setup.yml  # deprecated
   when: kubernetes_kubelet_extra_args|length > 0
